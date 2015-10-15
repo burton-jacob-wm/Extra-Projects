@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tic Tac Test</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script>
+        function changeText(){
+            document.getElementById("testText").style.color = "red";
+            document.getElementById("testText").innerHTML = "X";
+        }
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <table>
+            <tr>
+                <td class="nav"><a href="index.html">Home</a></td>
+                <td class="nav"><a href="tictactoe.html">Tic Tac Toe</a></td>
+                <td class="nav"><a href="connectfour.html">Connect 4</a></td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <thead>
+            <tr>
+                <td colspan="3">
+                    Tic Tac Toe
+                </td>
+            </tr>
+            </thead>
+            <tr>
+                <td id="boxA"><button type="button" class="boxA" onclick="changeA()"></button></td>
+                <td id="boxB"><button type="button" class="boxB" onclick="changeB()"></button></td>
+                <td id="boxC"><button type="button" class="boxC" onclick="changeC()"></button></td>
+            </tr>
+            <tr>
+                <td id="boxD"><button type="button" class="boxD" onclick="changeD()"></button></td>
+                <td id="boxE"><button type="button" class="boxE" onclick="changeE()"></button></td>
+                <td id="boxF"><button type="button" class="boxF" onclick="changeF()"></button></td>
+            </tr>
+            <tr>
+                <td id="boxG"><button type="button" class="boxG" onclick="changeG()"></button></td>
+                <td id="boxH"><button type="button" class="boxH" onclick="changeH()"></button></td>
+                <td id="boxI"><button type="button" class="boxI" onclick="changeI()"></button></td>
+            </tr>
+            <tr>
+                <td style="border: 0"></td>
+                <td onclick="location.reload()">RESET</td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>
